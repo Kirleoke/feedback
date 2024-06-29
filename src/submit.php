@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
     $stmt->bind_param("ssss", $name, $phone, $email, $message);
     $stmt->execute();
 
-    mail("orangeboom546@mail.ru", "Новое сообщение", $message, "From: $email");
+    mail("ncpremote@mail.ru", "Новое сообщение", $message, "From: $email");
 
     echo "Ваше сообщение отправлено!";
 }
